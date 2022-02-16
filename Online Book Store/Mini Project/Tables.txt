@@ -1,0 +1,27 @@
+create table reg 
+(
+id  int(5) auto_increment not null primary key,
+firstName varchar(20) not null,
+lastName varchar(20) not null,
+city varchar(20) not null,
+phone int(10) unique not null,
+dob varchar(11) not null,
+gender char not null,
+email varchar(20) unique not null,
+userName varchar(20) unique not null,
+password varchar(10) not null
+);
+
+
+create table book
+(
+id  int(5) auto_increment not null primary key,
+bookName varchar(50) not null,
+authorName varchar(20) not null,
+isbnNum int(10) unique not null,
+price int(30) not null,
+bookCover varchar(100),
+image blob
+);
+
+

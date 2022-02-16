@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+h2
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+/* Full-width input fields */
+#un, #psw{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Styles for the submit button */
+.sub {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float submit and register buttons and add an equal width */
+.sub, .register {
+  float: left;
+  width: 50%;
+}
+
+/* Add a background color when the inputs get focus */
+#un:focus,#psw:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+
+
+/* background */
+.back {
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 60px;
+}
+
+/* Box */
+.box {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 70%; 
+}
+
+.btn::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+<body>
+<div class="back">
+  <form class="box" action="Login.jsp">
+  <h2>Login Form</h2>
+    <div class="imgcontainer">
+   
+      <img src="avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="un" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+      <div class="btn">
+        <button type="submit" class="sub">Submit</button>
+        <a href="Reg.html"><button type="button" class="register">Register</button></a>
+      </div>
+      
+    </div>
+
+  </form>
+</div>
+
+
+
+</body>
+</html>
